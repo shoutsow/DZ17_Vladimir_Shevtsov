@@ -158,7 +158,7 @@
     0 до 360.<br><br>
     <form method= "GET" action="#">
         Введите значение в градусах в пределах от 0 до 360
-        <input name="Grdvalue" type="text" placeholder="0 - 360">
+        <input name="grdValue" type="text" placeholder="0 - 360">
         <br>
         <input type="submit" value= "Отправить">
         <br><br>
@@ -166,7 +166,7 @@
 
     <?php
 
-        $grd = +$_GET['Grdvalue'];
+        $grd = +$_GET['grdValue'];
         if ($grd >= 0 && $grd <=360) {
             echo 'Количество прошедших часов: ' . floor($grd / 15) . '<br>' . '<hr>';
         } else {
